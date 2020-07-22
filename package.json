@@ -1,8 +1,9 @@
 {
-  "name": "shortid",
+  "name": "@sobeyficus/shortid",
   "version": "2.2.15",
   "description": "Amazingly short non-sequential url-friendly unique id generator.",
   "main": "index.js",
+  "types": "./index.d.ts",
   "scripts": {
     "build": "grunt build",
     "test": "grunt test && size-limit"
@@ -20,6 +21,9 @@
   ],
   "author": "Dylan Greene <dylang@gmail.com>",
   "repository": "dylang/shortid",
+  "publishConfig": {
+    "registry": "http://172.16.148.174:8081/repository/npm-private/"
+  },
   "browser": {
     "./lib/random/random-byte.js": "./lib/random/random-byte-browser.js",
     "./lib/util/cluster-worker-id.js": "./lib/util/cluster-worker-id-browser.js"
